@@ -20,7 +20,6 @@ void printBMPHeaderData(BITMAPINFOHEADER* toPrint){
     printf("COMPRESSION TYPE: %d\n", toPrint->compression);
     printf("NUMBER OF COLORS: %d\n", toPrint->ncolours);
 }
-
 //GET HEADER DATA
 static inline const BITMAPINFOHEADER* loadBmpHeader (const char* fileName){
     BITMAPINFOHEADER* toReturn = malloc(sizeof(BITMAPINFOHEADER));

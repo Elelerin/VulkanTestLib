@@ -1,8 +1,11 @@
 #ifndef BMP_H
 #define BMP_H
+
+#pragma once
 #include <stdio.h>
 
 #include "../include/KEYVALS.h"
+
 
 #define BMP_NO_COMPRESSION 0
 #define BMP_8BIT_ENCODING 1
@@ -53,6 +56,7 @@ typedef struct{
 } BITMAPINFO;
 
 void printBMPHeaderData(BITMAPINFOHEADER* toPrint);
+
 static inline const BITMAPINFOHEADER* loadBmpHeader(const char* fileName);
 
 BITMAPINFO* loadBITMAPINFO(const char* fileName);
