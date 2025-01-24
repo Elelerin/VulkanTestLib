@@ -6,7 +6,6 @@
 
 #include "../include/KEYVALS.h"
 
-
 #define BMP_NO_COMPRESSION 0
 #define BMP_8BIT_ENCODING 1
 #define BMP_4BIT_ENCODING 2
@@ -66,5 +65,4 @@ bmpPixelData getBMPData(const char* fileName, int *x, int *y, int *channels, int
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
-
 #endif // BMP_H
