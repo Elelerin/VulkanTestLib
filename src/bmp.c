@@ -21,7 +21,7 @@ void printBMPHeaderData(BITMAPINFOHEADER* toPrint){
     printf("NUMBER OF COLORS: %d\n", toPrint->ncolours);
 }
 //GET HEADER DATA
-static inline const BITMAPINFOHEADER* loadBmpHeader (const char* fileName){
+const BITMAPINFOHEADER* loadBmpHeader (const char* fileName){
     BITMAPINFOHEADER* toReturn = malloc(sizeof(BITMAPINFOHEADER));
     FILE* fptr = fopen(fileName, "r");
 
@@ -64,7 +64,6 @@ static inline const BITMAPINFOHEADER* loadBmpHeader (const char* fileName){
     free(_temp);
     return toReturn;
 
-    BADCOMPRESSIONBI:
         fclose(fptr);
         free(_temp);
         free(toReturn);

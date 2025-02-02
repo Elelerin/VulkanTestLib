@@ -1,3 +1,4 @@
+#pragma once
 #ifndef KEYVALS_H_INCLUDED
 #define KEYVALS_H_INCLUDED
 
@@ -7,3 +8,5 @@
 
 
 #endif // KEYVALS_H_INCLUDED
+
+
